@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/705h-S/Team-index-generator/issues"
   },
-  "homepage": "https://github.com/705h-S/Team-index-generator#readme"
+  "homepage": "https://github.com/705h-S/Team-index-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
 }
