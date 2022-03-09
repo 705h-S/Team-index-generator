@@ -16,11 +16,11 @@ describe('Manager object', () =>{
         const name = 'Josh';
         const id = 1;
         const email = 'fakeemail@gmail.com';
-        const officeNum = 222 ;
+        const officeNumber = 222 ;
         // Act 
-        const man = new Manager(name, id, email, officeNum);
+        const man = new Manager(name, id, email, officeNumber);
         // Assert
-        expect(man.officeNum).toEqual(officeNum);
+        expect(man.officeNumber).toEqual(officeNumber);
     });
 
     // What should it do?

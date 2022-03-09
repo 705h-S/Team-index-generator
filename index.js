@@ -11,7 +11,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 
-const generateHTML = require("./src/generateHTML");
+const generateHTML = require("./src/Template");
 
 // empty array to include team members.
 const teamArray = [];
@@ -72,7 +72,7 @@ const questions = {
         if (input) {
           return true;
         } else {
-          return "Please enter a phone number.";
+          return "Please enter an Office number.";
         }
       },
     },
