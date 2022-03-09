@@ -10,7 +10,7 @@ const Manager = require('../lib/Manager');
 describe('Manager object', () =>{
 
     // What should it do?
-    it('Should create an object of offuce number with the parameters of parent',()=>{
+    it('Should create an object of office number with the parameters of parent',()=>{
 
         // Arange 
         const name = 'Josh';
