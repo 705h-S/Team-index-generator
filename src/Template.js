@@ -93,3 +93,75 @@ function generateManagerCard (manager) {
       </div>
     `;
   };
+
+// load them together 
+  function generateTeamCards(employeeCards) {
+    return `
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Add CDN links for bootstrap, jQuery, and fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+
+    <!-- Add link to main css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Team Index Generator</title>
+  </head>
+
+  <body>
+    <!-- Create header section and create container fluid expands the container to fill the available width -->
+    <header class="container-fluid">
+      <div class="row">
+        <div class=" head col-12 jumbotron mb-3 text-white">
+          <h1 class="text-center">The Team</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Create main section with cards -->
+    <main class="container document-body">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center mt-4"></div>
+        ${employeeCards}
+  
+        </div>
+    </div>
+  </main>
+
+
+  <!-- Add script links for bootstrap, jQuery, and fontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/c44c0358b1.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/c44c0358b1.js" crossorigin="anonymous"></script>
+  
+</body>
+</html>  
+`;
+}
+
+// Export generateHTML module so Node.js tells oher files are allowed to access the code
+module.exports = generateHTML;  
