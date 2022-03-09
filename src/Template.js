@@ -38,10 +38,10 @@ function generateHTML(employeeData) {
   // return generateTeam to create html
   const generateTeam = generateTeamCards(employeeCards);
   return generateTeam;
-};
+}
 // Manager
-function generateManagerCard (manager) {
-    return `
+function generateManagerCard(manager) {
+  return `
       <div class="card mx-4 mb-4" id="manager-card">
       <div class=" team card-header text-center card-title  text-white">
           <h3>${manager.name}</h3>
@@ -56,10 +56,10 @@ function generateManagerCard (manager) {
         </div>
       </div>
     `;
-  };
-  // Intern
-  function generateInternCard (intern) {
-    return `
+}
+// Intern
+function generateInternCard(intern) {
+  return `
       <div class="card mx-4 mb-4" id="intern-card">
       <div class="card-header text-center card-title team text-white">
             <h3>${intern.name}</h3>
@@ -74,10 +74,10 @@ function generateManagerCard (manager) {
         </div>
       </div>
     `;
-  };
-  // Engineer
-  function generateEngineerCard (engineer) {
-    return `
+}
+// Engineer
+function generateEngineerCard(engineer) {
+  return `
       <div class="card mx-4 mb-4" id="engineer-card">
       <div class="card-header text-center card-title team text-white">
           <h3>${engineer.name}</h3>
@@ -92,11 +92,11 @@ function generateManagerCard (manager) {
         </div>
       </div>
     `;
-  };
+}
 
-// load them together 
-  function generateTeamCards(employeeCards) {
-    return `
+// load them together
+function generateTeamCards(employeeCards) {
+  return `
   <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -164,4 +164,4 @@ function generateManagerCard (manager) {
 }
 
 // Export generateHTML module so Node.js tells oher files are allowed to access the code
-module.exports = generateHTML;  
+module.exports = generateHTML;
