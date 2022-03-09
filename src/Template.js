@@ -38,4 +38,22 @@ function generateHTML(employeeData) {
   // return generateTeam to create html
   const generateTeam = generateTeamCards(employeeCards);
   return generateTeam;
-}
+};
+
+function generateManagerCard (manager) {
+    return `
+      <div class="card mx-4 mb-4" id="manager-card">
+      <div class=" team card-header text-center card-title  text-white">
+          <h3>${manager.name}</h3>
+          <h4><i class="fas fa-mug-hot mr-2"></i>Manager</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">ID: ${manager.id}</li>
+            <li class="list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></li>
+            <li class="list-group-item">Office number: <a href="tel:${manager.officeNumber}">${manager.officeNumber}</a></li>
+          </ul>
+        </div>
+      </div>
+    `;
+  };
