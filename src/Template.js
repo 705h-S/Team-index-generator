@@ -39,7 +39,7 @@ function generateHTML(employeeData) {
   const generateTeam = generateTeamCards(employeeCards);
   return generateTeam;
 };
-
+// Manager
 function generateManagerCard (manager) {
     return `
       <div class="card mx-4 mb-4" id="manager-card">
@@ -57,3 +57,21 @@ function generateManagerCard (manager) {
       </div>
     `;
   };
+  // Intern
+  function generateInternCard (intern) {
+    return `
+      <div class="card mx-4 mb-4" id="intern-card">
+      <div class="card-header text-center card-title team text-white">
+            <h3>${intern.name}</h3>
+            <h4><i class="fas fa-user-graduate mr-2"></i>Intern</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">ID: ${intern.id}</li>
+            <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
+            <li class="list-group-item">School: ${intern.school}</li>
+          </ul>
+        </div>
+      </div>
+    `;
+  }
