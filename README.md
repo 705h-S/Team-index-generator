@@ -57,7 +57,7 @@ npm run start
 
 Video of application running along with test of application.
 <br>
-[Walkthrough](#)
+[Walkthrough](https://drive.google.com/file/d/1bVblRhhKAZXMO-HcciIhxP9XetvzfQdf/view)
 
 ---
 
